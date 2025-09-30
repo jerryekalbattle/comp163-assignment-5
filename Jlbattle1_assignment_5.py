@@ -21,4 +21,21 @@ print()
 # used zybooks exsamples to make sure i was on the right track
 # im using while loop becuse i dont have a close guess of when it will end
 
+# Challenge 2: Prime Number Checker
+print("=== Challenge 2: Prime Number Checker ===")
+
+n = int(input("Enter a number: "))
+
+if n > 1:
+    print(f"Testing divisors from 2 to {n - 1}...")
+    for i in range(2, n - 1):
+        if n % i == 0:
+            print(f"{n} is not prime (divisible by 3)")
+            break
+    else:
+        print(f"{n} is prime!")
+else:
+    print(f"{n} is not prime")
+print()
+
 
