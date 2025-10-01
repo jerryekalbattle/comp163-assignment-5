@@ -38,4 +38,18 @@ else:
     print(f"{n} is not prime")
 print()
 
-
+# Challenge 3: Multiplication Table Grid
+print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+print("  ", end="")
+# print header row
+for header in range (1, 11):
+    print(f"{header:4}", end="")
+print()
+for row in range (1, 11):
+    print(f"{row:2}", end="")
+    for column in range(1, 11):
+        product = row * column
+        print(f"{product:4}", end="")
+    print()
+# used ai for what :4 meeant because i didnt remember seeing it in zybooks
